@@ -16,4 +16,5 @@ public class SumController : Controller
         return Content($"value 1 is : {additionRequest.X}, value 2 is {additionRequest.Y}");
     }
 
+
 }

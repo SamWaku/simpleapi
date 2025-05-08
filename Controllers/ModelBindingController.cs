@@ -9,7 +9,7 @@ public class ModelBindingController : Controller
     //Route data
     public IActionResult RouteData()
     {
-        return Content("Hello")
+        return Content("Hello");
     }
 
     //Query string

@@ -11,8 +11,9 @@ public class AdditionRequest
 public class SumController : Controller
 {
     [HttpPost("api/sum")]
-    public int Sum(AdditionRequest additionRequest)
+    public IActionResult Sum(AdditionRequest additionRequest)
     {
-        return additionRequest.Y + additionRequest.X;
+        return Content($"value 1 is : {additionRequest.X}, value 2 is {additionRequest.Y}");
     }
+
 }

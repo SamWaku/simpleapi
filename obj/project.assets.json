@@ -993,9 +993,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\dotnet\\SimpleApi\\..csproj",
-      "projectName": ".",
-      "projectPath": "D:\\dev\\dotnet\\SimpleApi\\..csproj",
+      "projectUniqueName": "D:\\dev\\dotnet\\SimpleApi\\SimpleApi.csproj",
+      "projectName": "SimpleApi",
+      "projectPath": "D:\\dev\\dotnet\\SimpleApi\\SimpleApi.csproj",
       "packagesPath": "C:\\Users\\Samue\\.nuget\\packages\\",
       "outputPath": "D:\\dev\\dotnet\\SimpleApi\\obj\\",
       "projectStyle": "PackageReference",

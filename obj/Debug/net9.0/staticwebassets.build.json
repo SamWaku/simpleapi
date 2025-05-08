@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "22N0qOQgQTdqW+HURum5y+2b1v1Ky9vtgbintF3y0BU=",
-  "Source": ".",
-  "BasePath": "_content/.",
+  "Hash": "8TE2fqSvL69L5dg2EjNKxhl5Qv+kOM+60xHYiqFqqaU=",
+  "Source": "SimpleApi",
+  "BasePath": "_content/SimpleApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

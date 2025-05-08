@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fxSMos/kdmE=",
+  "dgSpecHash": "YzGA9pyCOFk=",
   "success": true,
-  "projectFilePath": "D:\\dev\\dotnet\\SimpleApi\\..csproj",
+  "projectFilePath": "D:\\dev\\dotnet\\SimpleApi\\SimpleApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samue\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
     "C:\\Users\\Samue\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.4\\microsoft.entityframeworkcore.9.0.4.nupkg.sha512",

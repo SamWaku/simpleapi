@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Mvc;
+
 namespace Controllers;
 
-public class ModelBindingController : Controllers
+public class ModelBindingController : Controller
 {
     //form data
 

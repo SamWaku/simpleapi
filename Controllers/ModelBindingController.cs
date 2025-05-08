@@ -8,9 +8,9 @@ public class ModelBindingController : Controller
 
     //Route data
     [HttpGet("/api/route-data")]
-    public IActionResult RouteData()
+    public IActionResult RouteData() 
     {
-        return Content("Hello");
+        return Json(new {"message":"hello how are youu?"});
     }
 
     //Query string

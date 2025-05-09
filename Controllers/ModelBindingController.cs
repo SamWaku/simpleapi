@@ -34,7 +34,7 @@ public class ModelBindingController : Controller
     [HttpGet("api/route-data-from-route")]
     public IActionResult RouteDataFromRoute([FromRoute] int page)
     {
-        return Content($"Valur from rout is: {page}")
+        return Content($"Valur from rout is: {page}");
     }
 
     //Query string

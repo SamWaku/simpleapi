@@ -8,7 +8,6 @@ public class ModelBindingController : Controller
 
     //Route data
     //not required
-    [Route("simple")]
     [HttpGet("api/route-data/{id}/{name}")]
     public IActionResult RouteData(int? id, string? name) 
     {
@@ -39,7 +38,7 @@ public class ModelBindingController : Controller
     }
 
     //Both from Route and Query
-    [HttpGet]
+    [HttpGet("api/route-data-from-query-route/{id?}")]
     public IActionResult RouteDataFromRouteAndQuery([FromRoute] int id, [FromQuery] string name)
     {
         if (id == null)

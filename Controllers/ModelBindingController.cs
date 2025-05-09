@@ -39,7 +39,7 @@ public class ModelBindingController : Controller
 
     //Both from Route and Query
     [HttpGet("api/route-data-from-query-route/{id?}")]
-    public IActionResult RouteDataFromRouteAndQuery([FromRoute] int id, [FromQuery] string name)
+    public IActionResult RouteDataFromRouteAndQuery([FromRoute] int id, [FromQuery] string name) //For the Query, I can have it in the URL path or just in the method contructor
     {
         if (id == null)
         {

@@ -23,7 +23,7 @@ public class ModelBindingController : Controller
     }
 
     //FromQuery
-    [HttpGet("api/route-data-from-query")]
+    [HttpGet("api/route-data-from-query")] //when using query no need to pass params in URL
     public IActionResult RoutDataFromQuery([FromQuery] int page)
     {
         return Content($"The page number returned is {page}");

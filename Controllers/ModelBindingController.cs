@@ -44,10 +44,10 @@ public class ModelBindingController : Controller
     {
         if (id == null)
         {
-            return NotFound("User Id not provided")
+            return NotFound("User Id not provided");
         }
 
-        return Content($"User Id is {id} and Name is {name}")
+        return Content($"User Id is {id} and Name is {name}");
     }
 
     //Query string

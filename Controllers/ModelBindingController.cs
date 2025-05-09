@@ -15,18 +15,18 @@ public class ModelBindingController : Controller
     }
 
     //Required id
-    [HttpGet("api/route-data-required/{id}/{name}")]
+    [HttpGet("api/route-data-required/{id}")]
     public IActionResult RouteDataRequired() 
     {
-        int id = Convert.ToInt32(Request.QueryString[])
+        int id = Convert.ToInt32(Request.RouteValues["id"]);
         return Content($"Your id is {id}");
     }
 
     //FromQuery
-    [HttpGet("api/route-data-from-query?{page}")]
+    [HttpGet("api/route-data-from-query/{page?}")]
     public IActionResult RoutDataFromQuery([FromQuery] int page)
     {
-        return Content($"The page number returned is {page}")
+        return Content($"The page number returned is {page}");
     }
 
 

@@ -31,10 +31,10 @@ public class ModelBindingController : Controller
 
 
     //FromRoute
-    [HttpGet("api/route-data-from-route")]
+    [HttpGet("api/route-data-from-route/{page}")] //from route requires you to pass the variable as a parameter
     public IActionResult RouteDataFromRoute([FromRoute] int page)
     {
-        return Content($"Valur from rout is: {page}");
+        return Content($"Value from route is: {page}");
     }
 
     //Query string

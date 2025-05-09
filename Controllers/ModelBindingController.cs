@@ -7,10 +7,10 @@ public class ModelBindingController : Controller
     //form data
 
     //Route data
-    [HttpGet("/api/route-data")]
-    public IActionResult RouteData() 
+    [HttpGet("/api/route-data/{id}/{name}")]
+    public IActionResult RouteData(int? id, string? name) 
     {
-        return Json(new {"message":"hello how are youu?"});
+        return Content($"Your id is {id} and name is {name}");
     }
 
     //Query string

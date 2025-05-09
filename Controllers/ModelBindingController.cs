@@ -8,6 +8,7 @@ public class ModelBindingController : Controller
 
     //Route data
     //not required
+    [Route("simple")]
     [HttpGet("api/route-data/{id}/{name}")]
     public IActionResult RouteData(int? id, string? name) 
     {
@@ -35,6 +36,18 @@ public class ModelBindingController : Controller
     public IActionResult RouteDataFromRoute([FromRoute] int page)
     {
         return Content($"Value from route is: {page}");
+    }
+
+    //Both from Route and Query
+    [HttpGet]
+    public IActionResult RouteDataFromRouteAndQuery([FromRoute] int id, [FromQuery] string name)
+    {
+        if (id == null)
+        {
+            return NotFound("User Id not provided")
+        }
+
+        return Content($"User Id is {id} and Name is {name}")
     }
 
     //Query string

@@ -64,7 +64,14 @@ public class ModelBindingController : Controller
     }
     //With model class
     [HttpGet("api/route-data-from-class-model")]
-    public IActionResult RouteDataFromRequestClass([FromQuery] User user)
+    public IActionResult GetRouteDataFromRequestClass([FromQuery] User user)
+    {
+        return Content($"The id is {user.id} and name is {user.name}");
+    }
+
+    //post request
+    [HttpPost("api/route-data-post-from-class-model")]
+    public IActionResult PostRouteDataFromRequestClass([FromQuery] User user)
     {
         return Content($"The id is {user.id} and name is {user.name}");
     }

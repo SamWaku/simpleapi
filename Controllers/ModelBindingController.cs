@@ -59,13 +59,13 @@ public class ModelBindingController : Controller
 
     public class User
     {
-        public ind? id {get; set;}
+        public int? id {get; set;}
         public string? name {get; set;}
     }
     //With model class
     [HttpGet("api/route-data-from-class-model")]
     public IActionResult RouteDataFromRequestClass([FromQuery] User user)
     {
-        return Content($"The id is {user.id} and name is {user.name}")
+        return Content($"The id is {user.id} and name is {user.name}");
     }
 }

@@ -56,5 +56,13 @@ public class ModelBindingController : Controller
         return Content($"The id is {id}");
     }
 
+
+    public class User
+    {
+        public ind? id {get; set;}
+        public string? name {get; set;}
+    }
     //With model class
+    [HttpGet("api/route-data-from-class-model")]
+    public IActionResult RouteDataFromRequestClass([FromQuery])
 }

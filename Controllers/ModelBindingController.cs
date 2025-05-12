@@ -55,4 +55,6 @@ public class ModelBindingController : Controller
     {
         return Content($"The id is {id}");
     }
+
+    //With model class
 }

@@ -50,4 +50,9 @@ public class ModelBindingController : Controller
     }
 
     //Query string
+    [HttpGet("api/route-data-from-query")]
+    public IActionResult RouteDataFromQuery([FromQuery] int? id)
+    {
+        return Content($"The ")
+    }
 }

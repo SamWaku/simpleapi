@@ -75,4 +75,10 @@ public class ModelBindingController : Controller
     {
         return Content($"The id is {user.id} and name is {user.name}");
     }
+
+    //url encoded
+    public IActionResult GetRouteDataFromURLEncoding()
+    {
+        
+    }
 }

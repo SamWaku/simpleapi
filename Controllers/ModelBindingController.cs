@@ -80,6 +80,6 @@ public class ModelBindingController : Controller
     [HttpPost("api/route-data")]
     public IActionResult GetRouteDataFromURLEncoding()
     {
-
+        return Content("");
     }
 }

@@ -77,8 +77,9 @@ public class ModelBindingController : Controller
     }
 
     //url encoded
+    [HttpPost("api/route-data")]
     public IActionResult GetRouteDataFromURLEncoding()
     {
-        
+
     }
 }
